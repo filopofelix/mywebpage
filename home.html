@@ -1,52 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Landing Page</title>
-	<style>
-		body {
-			background-image: url('https://storage.cloud.google.com/[BUCKET_NAME]/[OBJECT_NAME]');
-			background-size: cover;
-			background-position: center;
-			height: 100vh; /* Altura del cuerpo de la página */
-			margin: 0;
-			padding: 0;
-		}
-		.loading-bar {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 50%;
-			height: 20px; /* Altura de la barra de carga */
-			background-color: #333333;
-			z-index: 1;
-		}
 
-		.progress {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 30%; /* Ancho inicial de la barra de carga */
-			height: 100%;
-			background-color: #666;
-		}
-	</style>
-<body>
-	<div class="loading-bar">
+<html>
+	
+	<body>
+		<div class="loading-bar">
 		<div class="progress" style="width: 30%"></div>
-	</div>
-	<!-- Contenido de la página -->
-	<h1>Bienvenido a mi landing page!</h1>
-	<p>Esta es una demostración de cómo crear una barra de carga que avanza un 30%</p>
-	<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/anime.min.js"></script>
-	<script>
-		anime({
-			targets: '.progress',
-			duration: 1000, /* Duración de la animación */
-			ease: 'linear',
-			loop: false,
-			from: { width: '30%' },
-			to: { width: '100%' },
-		});
-	</script>
-</body>
+		</div>
+		<!-- Contenido de la página -->
+		<h1>Bienvenido a mi landing page!</h1>
+		<p>Esta es una demostración de cómo crear una barra de carga que avanza un 30%</p>
+	
+	</body>
 </html>
